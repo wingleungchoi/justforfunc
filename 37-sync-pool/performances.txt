@@ -1,0 +1,26 @@
+1st: github.PullRequestEvent no pool
+259799 ns/op	   90794 B/op	     654 allocs/op
+2nd: github.PullRequestEvent pool without reset (INCORRECT)
+237139 ns/op	   81202 B/op	     311 allocs/op
+3rd: github.PullRequestEvent + pool + reset ID
+236333 ns/op	   81218 B/op	     312 allocs/op
+4th: github.PullRequestEvent + pool + full reset
+255518 ns/op	   88074 B/op	     555 allocs/op
+==========
+5.0th smaller type no pool without reset
+181456 ns/op	   65036 B/op	      26 allocs/op
+5th: smaller type using pointer + pool
+177268 ns/op	   65063 B/op	      25 allocs/op
+6th: smaller type using pointer + pool + reset ID
+185835 ns/op	   65063 B/op	      25 allocs/op
+7th: smaller type using pointer + pool + full reset
+177559 ns/op	   65071 B/op	      27 allocs/op
+==========
+8 th: smaller type without pointer + pool
+178135 ns/op	   65063 B/op	      25 allocs/op
+9 th: smaller type without pointer + pool + reset ID
+ 175442 ns/op	   65063 B/op	      25 allocs/op
+10 th: smaller type without pointer + pool + full reset
+175221 ns/op	   65063 B/op	      25 allocs/op
+
+

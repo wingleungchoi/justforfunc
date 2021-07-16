@@ -1,5 +1,7 @@
 module github.com/campoy/justforfunc
 
+go 1.15
+
 require (
 	bitbucket.org/zombiezen/gopdf v0.0.0-20150317163809-1c63dc69751b // indirect
 	cloud.google.com/go v0.30.0
@@ -14,7 +16,8 @@ require (
 	github.com/gogo/protobuf v1.1.1
 	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0 // indirect
 	github.com/golang/protobuf v1.2.0
-	github.com/google/go-cmp v0.2.0
+	github.com/google/go-cmp v0.5.2
+	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/googleapis/gax-go v2.0.0+incompatible // indirect
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
 	github.com/jessevdk/go-flags v1.3.0
@@ -23,6 +26,7 @@ require (
 	github.com/sirupsen/logrus v1.1.1
 	github.com/spf13/cobra v0.0.3
 	github.com/spf13/pflag v1.0.2 // indirect
+	github.com/src-d/go-github v0.0.0-20161107154259-c4b786495042
 	go.opencensus.io v0.17.0 // indirect
 	golang.org/x/image v0.0.0-20171013013600-f7e31b4ea2e3 // indirect
 	golang.org/x/net v0.0.0-20180926154720-4dfa2610cdf3
